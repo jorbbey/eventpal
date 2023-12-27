@@ -7,4 +7,13 @@ export default defineConfig( {
   css: {
     postcss: './postcss.config.js', // Use the PostCSS config file
   },
+  // server: {
+  //   proxy: {
+  //     '/api': {
+  //       target: 'https://www.eventbriteapi.com',
+  //       changeOrigin: true,
+  //       rewrite: ( path ) => path.replace( /^\/api/, '' ),
+  //     },
+  //   },
+  // },
 } )
