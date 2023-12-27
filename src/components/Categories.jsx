@@ -9,7 +9,7 @@ const Categories = () => {
       try {
         const apiKey = "AIVGQYcF0AuWAIlXChYiRGcEaFuEwR9l";
         const response = await fetch(
-          `https://app.ticketmaster.com/discovery/v2/events.json?size=18&apikey=${apiKey}`
+          `https://localhost:5173/discovery/v2/events.json?size=18&apikey=${apiKey}`
         );
 
         if (!response.ok) {

@@ -9,7 +9,7 @@ const Location = () => {
     try {
       const apiKey = "AIVGQYcF0AuWAIlXChYiRGcEaFuEwR9l";
       const res = await fetch(
-        `https://app.ticketmaster.com/discovery/v2/events.json?keyword=${city}&apikey=${apiKey}`
+        `https://localhost:5173/discovery/v2/events.json?keyword=${city}&apikey=${apiKey}`
       );
 
       if (!res.ok) {
