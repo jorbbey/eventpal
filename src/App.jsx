@@ -6,7 +6,7 @@ import Location from "./components/Location";
 const App = () => {
   return <>
     <div>
-      {/* <Categories /> */}
+      <Categories />
       {/* <SearchApp/> */ }
       {/* <Location/> */}
  </div>
