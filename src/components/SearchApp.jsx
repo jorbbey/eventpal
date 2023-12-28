@@ -11,7 +11,7 @@ const SearchApp = () => {
     try {
       const apiKey = "AIVGQYcF0AuWAIlXChYiRGcEaFuEwR9l";
       const response = await fetch(
-        `https://localhost:5173/discovery/v2/events.json?keyword=${searchTerm}&apikey=${apiKey}`
+        `https://app.ticketmaster.com/discovery/v2/events.json?keyword=${searchTerm}&apikey=${apiKey}`
       );
 
       if (!response.ok) {
