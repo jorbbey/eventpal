@@ -41,7 +41,7 @@ const SearchApp = () => {
 
   return (
     <div>
-      <h1>Ticketmaster Event Search</h1>
+      <h1>Eventmaster Event Search</h1>
       <div>
         <input
           type="text"

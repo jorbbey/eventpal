@@ -91,7 +91,7 @@ const Categories = () => {
             // carousel
             <div
               key={result.id}
-              className=" my-10 w-full md:w-96 md:mx-5 rounded-tl-2xl rounded-tr-2xl"
+              className=" my-10 w-full md:w-96 md:mx-5 rounded-tl-2xl rounded-tr-2xl bg-slate-100"
             >
               {/* image */}
               <div className="w-full">
@@ -103,7 +103,7 @@ const Categories = () => {
               </div>
 
               {/* event name */}
-              <h1 className="font-bold text-2xl md:text-3xl">{result.name}</h1>
+              <h1 className="font-bold text-xl md:text-2xl">{result.name}</h1>
 
               {/* location arrow and venue */}
               <div className=" flex justify-center items-start md:justify-start my-3">
@@ -173,12 +173,14 @@ const Categories = () => {
               </div>
 
               {/* share buttons */}
-              <div>
+              <div className="my-10 mx-3">
                 <p>Share on:</p>
-                <BiLogoFacebook />
-                <RiTwitterXLine />
-                <FaInstagram />
-                <TiSocialGooglePlus />
+                <div className="flex">
+                  <BiLogoFacebook />
+                  <RiTwitterXLine />
+                  <FaInstagram />
+                  <TiSocialGooglePlus />
+                </div>
               </div>
             </div>
           ))
@@ -197,7 +199,7 @@ const Categories = () => {
               (eventData?._embedded?.events?.length || 0) / eventsPerPage
             )
           }
-          className="cursor-pointer text-xl text-red-500 font-semibold"
+          className="cursor-pointer text-md md:text-xl text-red-500 font-semibold absolute right-5 my-10"
         >
           See more
         </button>
